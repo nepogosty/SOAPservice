@@ -1,0 +1,10 @@
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\bin\Debug\WebTest.exe.config
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\bin\Debug\WebTest.exe
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\bin\Debug\WebTest.pdb
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.csprojAssemblyReference.cache
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.Form1.resources
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.Properties.Resources.resources
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.csproj.GenerateResource.cache
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.csproj.CoreCompileInputs.cache
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.exe
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\WebTest\obj\Debug\WebTest.pdb

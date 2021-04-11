@@ -1,0 +1,10 @@
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\bin\Debug\lb8.exe.config
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\bin\Debug\lb8.exe
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\bin\Debug\lb8.pdb
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.csprojAssemblyReference.cache
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.Form1.resources
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.Properties.Resources.resources
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.csproj.GenerateResource.cache
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.csproj.CoreCompileInputs.cache
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.exe
+C:\Users\ReaLBERG\Desktop\3 курс\АИС\lb8\lb8\obj\Debug\lb8.pdb

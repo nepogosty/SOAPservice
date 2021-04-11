@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ChangeVolumeWeight">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="value" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="From" type="tns:VolumesWeights" />
+            <s:element minOccurs="1" maxOccurs="1" name="To" type="tns:VolumesWeights" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="VolumesWeights">
+        <s:restriction base="s:string">
+          <s:enumeration value="cubicmeter" />
+          <s:enumeration value="cubicdecimeter" />
+          <s:enumeration value="cubiccentimeter" />
+          <s:enumeration value="cubicmillimeter" />
+          <s:enumeration value="hectoliter" />
+          <s:enumeration value="decaliter" />
+          <s:enumeration value="liter" />
+          <s:enumeration value="deciliter" />
+          <s:enumeration value="centiliter" />
+          <s:enumeration value="milliliter" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ChangeVolumeWeightResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeVolumeWeightResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ChangeVolumeWeightSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeVolumeWeight" />
+  </wsdl:message>
+  <wsdl:message name="ChangeVolumeWeightSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeVolumeWeightResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LiterSoap">
+    <wsdl:operation name="ChangeVolumeWeight">
+      <wsdl:input message="tns:ChangeVolumeWeightSoapIn" />
+      <wsdl:output message="tns:ChangeVolumeWeightSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LiterSoap" type="tns:LiterSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ChangeVolumeWeight">
+      <soap:operation soapAction="http://tempuri.org/ChangeVolumeWeight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LiterSoap12" type="tns:LiterSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ChangeVolumeWeight">
+      <soap12:operation soapAction="http://tempuri.org/ChangeVolumeWeight" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Liter">
+    <wsdl:port name="LiterSoap" binding="tns:LiterSoap">
+      <soap:address location="https://localhost:44388/Liter.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LiterSoap12" binding="tns:LiterSoap12">
+      <soap12:address location="https://localhost:44388/Liter.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
